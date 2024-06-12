@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ภาษาไทย</title>
+</head>
+
+<body>
+  <%= _.template(require('./../includes/svg.html').default)() %>
+
+    <%= _.template(require('./../includes/header.html').default)() %>
+
+      <nav id="navigation"></nav>
+
+      <div id="main">
+
+        <div class="container">
+          <section id="gallery" class="gallery"></section>
+        </div>
+
+        <%= _.template(require('./../includes/footer.html').default)() %>
+
+      </div>
+</body>
+
+</html>

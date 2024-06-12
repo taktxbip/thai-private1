@@ -1,0 +1,23 @@
+@use 'sass:math';
+
+%clearfix {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}
+
+@function rem($size) {
+  $remSize: math.div($size, 16px);
+  //Default font size on html element is 100%, equivalent to 16px;
+  @return #{$remSize}rem;
+}

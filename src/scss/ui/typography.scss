@@ -1,0 +1,60 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $titles;
+  margin-top: 0;
+}
+
+.h1,
+h1 {
+  font: 300 normal rem(170px) / 1.2 var(--font-p);
+  color: #333;
+
+  @media screen and (max-width:1024px) {
+    font-size: rem(100px);
+  }
+
+  @media screen and (max-width:568px) {
+    font-size: rem(60px);
+  }
+}
+
+.h1 {
+  font-size: rem(100px);
+
+  @media screen and (max-width:568px) {
+    font-size: rem(60px);
+  }
+}
+
+h2 {
+  font: 400 normal rem(18px) / 1.2 var(--font-p);
+  margin: 20px 0;
+  text-align: center;
+
+  @media screen and (max-width:568px) {
+    font-size: rem(16px);
+  }
+}
+
+h3 {
+  font: 300 normal rem(22px) / 1.2 var(--font-p);
+
+  +p {
+    margin-top: 10px;
+  }
+}
+
+h6 {
+  font: 500 normal rem(18px) / 1.27 var(--font-p);
+}
+
+p {
+  font: 300 normal rem(13px) / 1.4 var(--font-p);
+  color: #040404;
+  margin-top: rem(22px);
+  margin-bottom: 0;
+}
