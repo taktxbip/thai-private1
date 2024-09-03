@@ -82,7 +82,7 @@ class Markup {
   }
 
   getPath(name, tiny = false) {
-    return tiny ? `${this.base}${name}-tiny.jpg` : `${this.base}${name}.jpg`;
+    return tiny ? `${this.base}${name}-tiny.jpg` : `${this.base}${name}`;
   }
 
   getDate(photoName) {
